@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.topbar {
+	background-image: url("topbar.jpg");
+	width: 100%;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+}
+
+.topbar-text {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 55px;
+}
+
+.navbar {
+	background-color: #1b9fcf;
+	overflow: hidden;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+.navbar a {
+	color: white;
+  	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+  	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: white;
+  	color: #1b9fcf;
+}
+
+.navbar a:active {
+	background-color: white;
+  	color: #1b9fcf;
+}
+
+.inline-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 200px;
+	padding-top: 20px;
+}
+
+.first {
+	flex-grow: 1;
+	border: 3px solid;
+	border-color: red;
+}
+
+.second {
+	flex-grow: 1;
+	border: 3px solid;
+	border-color: red;
+}
+
+.third {
+	flex-grow: 1;
+	border: 3px solid;
+	border-color: red;
+}
+
+.slideshow-container {
+	width: 100%;
+}
+
+.slideshow {
+  	display: none;
+}
+
+.slideshow-image {
+	width: 100%;
+	height: 500px;
+	object-fit: none;
+}
+
+.text {
+  	color: white;
+  	font-size: 15px;
+  	width: 100%;
+  	text-align: center;
+  	position: absolute;
+  	bottom: 250px;
+}
+
+.numbertext {
+  	color: white;
+  	font-size: 12px;
+  	position: absolute;
+  	padding-left: 5px;
+  	padding-top: 5px;
+}
+
+.dot {
+  	cursor: pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #717171;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #1b9fcf;
+}
+
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4}
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4}
+  	to {opacity: 1}
+}
